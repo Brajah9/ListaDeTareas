@@ -1,5 +1,5 @@
 :root {
-    --background-principal: #99A98F;
+    --background-principal: #a16761;
     --color-letras: rgb(26, 26, 26);
 }
 
@@ -8,20 +8,8 @@ body,html {
     color: var(--color-letras)
 }
 
-h1 {
-    color:#dce7df;
-    font-style: italic;
-    padding: 20px;
-    margin: 0;
-    text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 8px rgba(17, 17, 17,0.8);
-    margin-bottom: 50px;
-}
-
 .contenedor {
-    margin-top: 50px;
+    margin-top: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,17 +18,16 @@ h1 {
 
 .header {
     min-width: 400px;
-
 }
 
 .input-all {
+    margin-top: 2vh;
     display: flex;
     justify-content: center;
-
 }
 
 .div-cards-el {
-    border: 1px solid;
+    box-shadow: 2px 2px 5px black;
     display: grid;
     grid-template-columns: 2fr 100px 100px;
     width: auto;
@@ -48,7 +35,7 @@ h1 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px;
     font-size: 1.2em;
-    background: #D6E8DB;
+    background: #ffe4cf;
     border-radius: 10px;
     color: black;
     align-items: center;
@@ -57,13 +44,14 @@ h1 {
 
 .botonEliminar {
 
-    background: rgba(255, 173, 173,0.7);
+    background: rgba(179, 42, 8, 0.7);
     font-family: monospace;
     border-radius: 8px;
     margin-left: 5px;
     margin-right: 5px; 
     font-size: 1.1em;
-    border: 1px solid black;
+    border: none;
+    box-shadow: 2px 2px 1px rgb(20, 20, 20);
 
 
 }
@@ -75,7 +63,10 @@ h1 {
     margin-left: 15px;
     margin-right: 5px; 
     font-size: 1.1em;
-    border: 1px solid black;
+    border: none;
+    background: rgb(231, 162, 134);
+    box-shadow: 2px 2px 1px rgb(20, 20, 20);
+
 
 }
 
@@ -86,37 +77,45 @@ h1 {
     border-radius: 5px;
     margin-left: 5px;
     font-size: 1em;
-    background: #D6E8DB;
-    border: 1px solid black;
+    background: rgb(226, 172, 158);
+    border: none;
+    box-shadow: 1px 1px 5px black;
     border-radius: 12px;
 }
 
 .input-text {
-    background: rgb(235, 253, 239);
+    background: rgb(68, 34, 21);
+    color: rgb(229, 199, 143);
     padding: 12px;
     width: 60%;
     font-family: monospace;
     font-size: 1.15em;
-    border: 1px solid black;
+    border: none;
     border-radius: 12px;
 }
 
+.input-text:focus {
+    outline: none;
+}
+
+
 .main {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     min-width: 20vh;
     min-height: 400px;
-    padding: 5px;
+    padding: 15px;
     border-radius: 20px;
-    background: #C1D0B5;
-    border: 2px solid;
+    background: none;
+    box-shadow: 1px 1px 15px rgba(22, 22, 22,0.5);
+
 }
 
 .botonEditar:hover {
     cursor: pointer;
-    background: rgba(153, 169, 143,0.5);
+    background: rgb(223, 151, 133);
 }
 
 .activo {
@@ -130,7 +129,7 @@ h1 {
 
 .button-input:hover {
     cursor: pointer;
-    background: rgba(153, 169, 143,0.5);
+    background: rgb(245, 194, 146);
     opacity: 100%;
     
 }
